@@ -1,0 +1,1 @@
+th translate.lua -model nts_epoch11_8.49.t7 -src data.txt -output pred.txt

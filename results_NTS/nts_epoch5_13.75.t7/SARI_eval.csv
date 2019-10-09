@@ -1,0 +1,5 @@
+SARI	results_NTS	references.tsv,36.09,result_nts_epoch5_13.75.t7_5_h4,4
+SARI	results_NTS	references.tsv,35.55,result_nts_epoch5_13.75.t7_5_h2,2
+SARI	results_NTS	references.tsv,35.29,result_nts_epoch5_13.75.t7_5_h3,3
+SARI	results_NTS	references.tsv,34.91,result_nts_epoch5_13.75.t7_5,-
+SARI	results_NTS	references.tsv,34.91,result_nts_epoch5_13.75.t7_5_h1,1

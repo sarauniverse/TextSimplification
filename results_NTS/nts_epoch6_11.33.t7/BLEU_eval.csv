@@ -1,0 +1,5 @@
+BLEU	results_NTS	references.tsv,71.95,result_nts_epoch6_11.33.t7_5_h3,3
+BLEU	results_NTS	references.tsv,71.61,result_nts_epoch6_11.33.t7_5_h2,2
+BLEU	results_NTS	references.tsv,71.37,result_nts_epoch6_11.33.t7_5_h4,4
+BLEU	results_NTS	references.tsv,68.81,result_nts_epoch6_11.33.t7_5,-
+BLEU	results_NTS	references.tsv,68.81,result_nts_epoch6_11.33.t7_5_h1,1

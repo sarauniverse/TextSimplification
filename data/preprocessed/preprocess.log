@@ -1,0 +1,25 @@
+[10/09/19 02:14:27 INFO] Building source vocabularies...
+[10/09/19 02:14:36 INFO] Created word dictionary of size 50004 (pruned from 113442)
+[10/09/19 02:14:36 INFO] 
+[10/09/19 02:14:36 INFO] Building target vocabularies...
+[10/09/19 02:14:43 INFO] Created word dictionary of size 50004 (pruned from 93877)
+[10/09/19 02:14:43 INFO] 
+[10/09/19 02:14:43 INFO] Preparing training data...
+[10/09/19 02:15:07 INFO] ... shuffling sentences
+[10/09/19 02:15:10 INFO] ... sorting sentences by size
+[10/09/19 02:15:12 INFO] Prepared 88837 sentences:
+[10/09/19 02:15:12 INFO]  * 0 sequences ignored due to source length > 80 or target length > 80
+[10/09/19 02:15:12 INFO]  * average sequence length: source = 24.3, target = 20.3
+[10/09/19 02:15:12 INFO]  * % of unkown words: source = 3.2%, target = 2.3%
+[10/09/19 02:15:12 INFO] 
+[10/09/19 02:15:12 INFO] Preparing validation data...
+[10/09/19 02:15:13 INFO] ... shuffling sentences
+[10/09/19 02:15:13 INFO] ... sorting sentences by size
+[10/09/19 02:15:13 INFO] Prepared 205 sentences:
+[10/09/19 02:15:13 INFO]  * 0 sequences ignored due to source length > 80 or target length > 80
+[10/09/19 02:15:13 INFO]  * average sequence length: source = 26.1, target = 20.7
+[10/09/19 02:15:13 INFO]  * % of unkown words: source = 4.9%, target = 3.9%
+[10/09/19 02:15:13 INFO] 
+[10/09/19 02:15:13 INFO] Saving source vocabulary to '/Users/sagna/TextMining_Final/data/preprocessed/NTS.src.dict'...
+[10/09/19 02:15:13 INFO] Saving target vocabulary to '/Users/sagna/TextMining_Final/data/preprocessed/NTS.tgt.dict'...
+[10/09/19 02:15:13 INFO] Saving data to '/Users/sagna/TextMining_Final/data/preprocessed/NTS-train.t7'...

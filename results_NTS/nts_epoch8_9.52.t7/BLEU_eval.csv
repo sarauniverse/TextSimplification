@@ -1,0 +1,5 @@
+BLEU	results_NTS	references.tsv,80.49,result_nts_epoch8_9.52.t7_5_h4,4
+BLEU	results_NTS	references.tsv,80.11,result_nts_epoch8_9.52.t7_5_h3,3
+BLEU	results_NTS	references.tsv,80.03,result_nts_epoch8_9.52.t7_5_h2,2
+BLEU	results_NTS	references.tsv,79.77,result_nts_epoch8_9.52.t7_5_h1,1
+BLEU	results_NTS	references.tsv,79.77,result_nts_epoch8_9.52.t7_5,-
