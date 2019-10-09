@@ -9,14 +9,14 @@ In order to reproduce [Sergiu Nisioi et. al](https://www.aclweb.org/anthology/P1
 
 ## How to run 
 1. Lua based implementation of OpenNMT is required
-  1. [Install Torch](http://torch.ch/docs/getting-started.html)
-  2. Install additional packages:
+  1.1  [Install Torch](http://torch.ch/docs/getting-started.html)
+  1.2  Install additional packages:
     ```bash 
     luarocks install tds
     ```
     There is no need to clone the OpenNMT repository as it is included within this repository.
 2. Python 3+ is required  
-  1. Install [Python](https://www.python.org/downloads/)
+  2.1. Install [Python](https://www.python.org/downloads/)
 3. Checkout this repository
    ```bash 
    git clone --recursive https://github.com/sarauniverse/TextSimplification
@@ -43,7 +43,7 @@ You will see BLEU and SARI generated in two files **prediction_bleu_score.csv** 
 **Note** : If you want to include the predictions against the same test dataset (/data ) made by the some other model, please add the prediction output file to the folder **/predictions** and run the above script.
 
 ## Training from the scratch
-1. Preprocess the data
+1. Preprocess the data<br/>
 Replace the existing dataset with your dataset in the **/data** directory and run the following command. Retain the same name in the **/data** directory  because the following script looks for that file names.
   ```bash
   cd src/scripts
