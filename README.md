@@ -9,12 +9,12 @@ In order to reproduce [Sergiu Nisioi et. al](https://www.aclweb.org/anthology/P1
 
 ## How to run 
 1. Lua based implementation of OpenNMT is required
-  1.  [Install Torch](http://torch.ch/docs/getting-started.html)
+  1. [Install Torch](http://torch.ch/docs/getting-started.html)
   2. Install additional packages:
     ```bash 
     luarocks install tds
     ```
-    3. There is no need to clone the OpenNMT repository as it is included within this repository.
+    There is no need to clone the OpenNMT repository as it is included within this repository.
 2. Python 3+ is required  
   1. Install [Python](https://www.python.org/downloads/)
 3. Checkout this repository
@@ -50,13 +50,15 @@ Replace the existing dataset with your dataset in the **/data** directory and ru
   ./prepocess.sh
    ```
 The outputs will be generated in the **/data/preprocessed**  directory 
-2. To include the pre-trained Google News embedded as the global embedding, run the following command
+
+2. To include the pre-trained Google News embedding as the global embedding, run the following command
  ```bash
   cd src/scripts
   ./download_global_embeddings.sh
   ./create_embeddings.sh
    ```
    The embedding files are generated in the **/data/embed** directory.
+
 3. Start the training
 ```bash
   cd OpenNMT/
@@ -64,6 +66,7 @@ The outputs will be generated in the **/data/preprocessed**  directory
 ```
 You can make changes to the config file as per your requirement. If you are using pre-trained embedding, specify the path of the embedding the config file for the fields **pre_word_vecs_dec**, **pre_word_vecs_enc**.
 **Note** : Training usually takes longer time.
+
 4. After the training has been completed, you will have n number of model files generated as you have specified in the NTS.cfg file for the field **end_epoch**. Perform text simplification against the test dataset for each model generated using the following command
 ```bash
    cd src/scripts 
@@ -75,6 +78,7 @@ You can make changes to the config file as per your requirement. If you are usin
    python evaluate_sari_bleu.py ../data/test_src.en ../data/references/references.tsv ../eval_output/bleu.csv ../eval_output/sari.csv
 ```
 SARI and BLEU scores for all hypotheses of each model are stored in the **/eval_output/bleu.csv** and **/eval_output/sari.csv** files. Pick the model with the highest BLEU and SARI scores. 
+
 6. Copy and paste the highest prediction output files to the **/predictions** and run the following command to see the comparison.
 ```bash
  python src/evaluate.py ./data/test_src.en ./data/references/references.tsv ./predictions/ ./eval_output
