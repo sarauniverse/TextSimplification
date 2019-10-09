@@ -1,7 +1,12 @@
 #!/bin/bash
+if [ -z "$1" ]
+  then
+  	echo "Usage : ./translate.sh <model file path>"
+    exit 1
+fi
+MODEL_PATH=`greadlink -f $1`
 source ./config.sh
-
-MODEL_PATH=`greadlink -f ../../models/nts_epoch14_8.47.t7`
+echo ${MODEL_PATH}
 MODEL=${MODEL_PATH##*/}
 RES_DIR=`greadlink -f ../../results_${EXP_NAME}/${MODEL}`
 mkdir -p $RES_DIR
