@@ -8,14 +8,14 @@ The neural text simplification concurrently performs lexical simplification and 
 In order to reproduce [Sergiu Nisioi et. al](https://www.aclweb.org/anthology/P17-2014/) result, [WikiSmall](https://github.com/XingxingZhang/dress) dataset is used. 
 
 ## How to run 
-1. Lua based implementation of OpenNMT is required
-  1.1  [Install Torch](http://torch.ch/docs/getting-started.html)
-  1.2  Install additional packages:
+1. Lua based implementation of OpenNMT is required<br/>
+  1.1  [Install Torch](http://torch.ch/docs/getting-started.html) <br/>
+  1.2  Install additional packages: 
     ```bash 
     luarocks install tds
     ```
     There is no need to clone the OpenNMT repository as it is included within this repository.
-2. Python 3+ is required  
+2. Python 3+ is required <br/>
   2.1. Install [Python](https://www.python.org/downloads/)
 3. Checkout this repository
    ```bash 
