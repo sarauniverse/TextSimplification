@@ -40,7 +40,9 @@ In order to reproduce [Sergiu Nisioi et. al](https://www.aclweb.org/anthology/P1
    ```
 You will see BLEU and SARI generated in two files **prediction_bleu_score.csv** and **prediction_sari_score.csv** in the folder **eval_output**
     
-**Note** : If you want to include the predictions against the same test dataset (/data ) made by the some other model, please add the prediction output file to the folder **/predictions** and run the above script.
+**Note** 
+1.  If you want to include the predictions against the same test dataset (/data ) made by the some other model, please add the prediction output file to the folder **/predictions** and run the above script.
+2. This code is well tested with MacOS. If you want to run in Linux replace `greadlink` with `readlink` in the shell scripts.
 
 ## Training from the scratch
 1. Preprocess the data<br/>
