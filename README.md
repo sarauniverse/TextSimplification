@@ -83,6 +83,8 @@ SARI and BLEU scores for all hypotheses of each model are stored in the **/eval_
 ```bash
  python src/evaluate.py ./data/test_src.en ./data/references/references.tsv ./predictions/ ./eval_output
    ```
+## Live Text Simplification in the Jupyter Notebook
+You can find the live text simpflication and the visual representation of the SARI and BLEU scores comparison with bar graph in the Jupyter notebook file **/src/Neural_Text_Simplification.ipynb**
 
 ## Credits
 This repository is based on the code from the repository [https://github.com/senisioi/NeuralTextSimplification](https://github.com/senisioi/NeuralTextSimplification) and the [research paper](https://www.aclweb.org/anthology/P17-2014/)
