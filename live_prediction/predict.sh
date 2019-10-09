@@ -1,1 +1,10 @@
-th translate.lua -model nts_epoch11_8.49.t7 -src data.txt -output pred.txt
+#!/bin/bash
+source ./config.sh
+
+if [ -z "$1" ]
+  then
+  	echo "Usage : predict.sh <model file path>"
+    exit 1
+fi
+cd $OPENNMT_DIR
+th translate.lua -model $1 -src ${LIVE_PRED_DIR}/data.txt -output ${LIVE_PRED_DIR}/pred.txt
